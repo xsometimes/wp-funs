@@ -1,0 +1,17 @@
+@import "./mixin.scss";
+
+body {
+    background: #eee;
+}
+
+p {
+    @include lineEllipsis(1);
+}
+
+.cover {
+  width: 80px;
+}
+
+.extra {
+  color: green;
+}

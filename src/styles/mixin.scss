@@ -1,0 +1,16 @@
+// 超出部分省略号
+@mixin lineEllipsis($n) {
+    @if $n == 1 {
+        overflow: hidden;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    } @else {
+        display: -webkit-box;
+
+        overflow: hidden;
+
+        -webkit-line-clamp: $n;
+        -webkit-box-orient: vertical;
+    }
+}
